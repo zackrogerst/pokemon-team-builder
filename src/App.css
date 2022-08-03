@@ -1,6 +1,11 @@
 * {
 	margin: none;
+	padding: none;
 	box-sizing: border-box;
+}
+
+html {
+	font-size: 15px;
 }
 
 html,
@@ -130,6 +135,18 @@ table {
 }
 
 /* --------------------------------------------------- */
+:root {
+	--light: white;
+	--highlight: #de1a1a;
+	--highlight-2: white;
+	--bkg: #232323;
+	--bkg-2: #383838;
+}
+
+* {
+	color: var(--light)
+}
+
 h1,
 h2,
 h3,
@@ -139,7 +156,7 @@ h6,
 p,
 span,
 a {
-	color: white;
+	margin: .5rem 0;
 }
 
 h1 {
@@ -155,19 +172,27 @@ h3 {
 	font-weight: 900;
 }
 
+input {
+	padding: 0.5rem;
+	font-size: 17px;
+	border: none;
+	background-color: var(--light);
+	border-radius: 0.3rem;
+}
+
 /* --------------------------------------------------- */
 
 html {
-	background-color: #232323;
+	background-color: var(--bkg);
 }
 
 header {
-	background-color: #de1a1a;
-	padding: 40px;
+	background-color: var(--highlight);
+	padding: 3rem;
 }
 
 .team-section {
-	padding: 40px;
+	padding: 3rem;
 }
 
 .team-container {
@@ -178,7 +203,14 @@ header {
 }
 
 .team-card {
-	background-color: #383838;
+	background-color: var(--bkg-2);
 	padding: 1rem;
-	border-radius: 1rem;
+	border-radius: 0.3rem;
+	width: 100%;
+	max-width: 1fr;
+}
+
+.pokedex-section {
+	padding: 3rem;
+	background-color: var(--bkg-2);
 }

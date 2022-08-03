@@ -18,7 +18,7 @@ const PokedexCard = ({ pokemon, index, setTeam }) => {
 		<div className="pokedex-card">
 			<img
 				src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemon.id}.png`}
-				alt="image"
+				alt={`pokemon ${pokemon.id}`}
 			/>
 			<h3>{pokemon.name}</h3>
 			<button onClick={addToTeam}>Add To Team</button>

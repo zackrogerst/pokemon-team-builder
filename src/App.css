@@ -234,7 +234,8 @@ header {
 }
 
 .pokedex-card {
-	background-color: var(--bkg2);
+	background-color: var(--bkg);
+	border-radius: .3rem;
 	padding: 1rem;
 	width: 15%;
 }

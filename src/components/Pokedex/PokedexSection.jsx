@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import PokedexCard from "./PokedexCard";
 
-const PokedexSection = ({ allPokemon }) => {
+const PokedexSection = ({ allPokemon, setTeam }) => {
 	const [search, setSearch] = useState("");
 
 	let display = allPokemon
@@ -16,7 +16,7 @@ const PokedexSection = ({ allPokemon }) => {
 			return pokemon.name.includes(search);
 		})
 		.map((pokemon, index) => {
-			return <PokedexCard pokemon={pokemon} index={index} key={index} />;
+			return <PokedexCard pokemon={pokemon} index={index} key={index} setTeam={setTeam}/>;
 		});
 
 	return (

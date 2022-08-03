@@ -7,6 +7,8 @@ import React, { useState, useEffect } from "react";
 
 function App() {
 	const [allPokemon, setAllPokemon] = useState([]);
+	const [team, setTeam] = useState([]);
+  console.log(team)
 
 	useEffect(() => {
 		axios
@@ -18,8 +20,8 @@ function App() {
 	return (
 		<div className="App">
 			<Header />
-			<TeamSection />
-			<PokedexSection allPokemon={allPokemon} />
+			<TeamSection team={team}/>
+			<PokedexSection allPokemon={allPokemon} setTeam={setTeam}/>
 		</div>
 	);
 }

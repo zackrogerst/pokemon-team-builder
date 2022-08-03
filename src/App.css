@@ -138,9 +138,9 @@ table {
 :root {
 	--light: white;
 	--highlight: #de1a1a;
-	--highlight-2: white;
+	--highlight2: #2a75bb;
 	--bkg: #232323;
-	--bkg-2: #383838;
+	--bkg2: #383838;
 }
 
 * {
@@ -180,6 +180,17 @@ input {
 	border-radius: 0.3rem;
 }
 
+button {
+	background-color: var(--highlight);
+	border: none;
+	border-radius: .3rem;
+	padding: .5rem;
+}
+
+button:hover {
+	background-color: var(--highlight2);
+}
+
 /* --------------------------------------------------- */
 
 html {
@@ -187,7 +198,7 @@ html {
 }
 
 header {
-	background-color: var(--highlight);
+	background-color: var(--highlight2);
 	padding: 3rem;
 }
 
@@ -203,7 +214,7 @@ header {
 }
 
 .team-card {
-	background-color: var(--bkg-2);
+	background-color: var(--bkg2);
 	padding: 1rem;
 	border-radius: 0.3rem;
 	width: 100%;
@@ -212,5 +223,21 @@ header {
 
 .pokedex-section {
 	padding: 3rem;
-	background-color: var(--bkg-2);
+	background-color: var(--bkg2);
+}
+
+.pokedex-container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+}
+
+.pokedex-card {
+	background-color: var(--bkg2);
+	padding: 1rem;
+	width: 15%;
+}
+
+.pokedex-card img {
+	max-width: 100%;
 }

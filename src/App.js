@@ -1,7 +1,7 @@
 import "./App.css";
 import Header from "./components/Header";
 import TeamSection from "./components/TeamSection";
-import PokedexSection from "./components/PokedexSection";
+import PokedexSection from "./components/Pokedex/PokedexSection";
 import axios from "axios";
 import React, { useState, useEffect } from "react";
 
@@ -19,7 +19,7 @@ function App() {
 		<div className="App">
 			<Header />
 			<TeamSection />
-			<PokedexSection />
+			<PokedexSection allPokemon={allPokemon}/>
 		</div>
 	);
 }

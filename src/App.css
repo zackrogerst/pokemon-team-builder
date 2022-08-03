@@ -130,14 +130,28 @@ table {
 }
 
 /* --------------------------------------------------- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a {
+	color: white;
+}
 
 h1 {
 	font-size: 40px;
-	font-weight: 100;
 }
 
 h2 {
-	font-size: 30px;
+	font-size: 34px;
+}
+
+h3 {
+	font-size: 18px;
 	font-weight: 900;
 }
 
@@ -150,5 +164,21 @@ html {
 header {
 	background-color: #de1a1a;
 	padding: 40px;
-	color: white;
+}
+
+.team-section {
+	padding: 40px;
+}
+
+.team-container {
+	display: flex;
+	justify-content: space-between;
+	gap: 1rem;
+	width: 100%;
+}
+
+.team-card {
+	background-color: #383838;
+	padding: 1rem;
+	border-radius: 1rem;
 }

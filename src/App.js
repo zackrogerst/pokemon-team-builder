@@ -19,7 +19,7 @@ function App() {
 		<div className="App">
 			<Header />
 			<TeamSection />
-			<PokedexSection allPokemon={allPokemon}/>
+			<PokedexSection allPokemon={allPokemon} />
 		</div>
 	);
 }

@@ -1,13 +1,17 @@
 import React from "react";
+import axios from "axios";
 
 const PokedexCard = ({ pokemon, index, setTeam }) => {
-  
 	const addToTeam = () => {
-		setTeam(prevState => {
-			if (prevState.length === 6) return prevState;
-			let newState = [...prevState, pokemon.id];
-			return newState;
-		});
+		axios
+			.get(`https://pokeapi.co/api/v2/pokemon/${pokemon.id}`)
+			.then(res => {
+				setTeam(prevState => {
+					if (prevState.length === 6) return prevState;
+					let newState = [...prevState, res.data];
+					return newState;
+				});
+			});
 	};
 
 	return (

@@ -1,6 +1,6 @@
 import "./App.css";
 import Header from "./components/Header";
-import TeamSection from "./components/TeamSection";
+import TeamSection from "./components/Team/TeamSection";
 import PokedexSection from "./components/Pokedex/PokedexSection";
 import axios from "axios";
 import React, { useState, useEffect } from "react";
@@ -8,7 +8,6 @@ import React, { useState, useEffect } from "react";
 function App() {
 	const [allPokemon, setAllPokemon] = useState([]);
 	const [team, setTeam] = useState([]);
-  console.log(team)
 
 	useEffect(() => {
 		axios

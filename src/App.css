@@ -209,7 +209,6 @@ header {
 
 .team-container {
 	display: flex;
-	justify-content: space-between;
 	gap: 1rem;
 	width: 100%;
 }
@@ -219,7 +218,7 @@ header {
 	padding: 1rem;
 	border-radius: 0.3rem;
 	width: 100%;
-	max-width: 1fr;
+	max-width: 33%;
 }
 
 .pokedex-section {
@@ -230,14 +229,17 @@ header {
 .pokedex-container {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 1rem;
+	gap: 1%;
 }
 
 .pokedex-card {
 	background-color: var(--bkg);
 	border-radius: .3rem;
 	padding: 1rem;
-	width: 15%;
+	width: 100%;
+	min-width: 10rem;
+	max-width: 19%;
+	margin-top: 1%;
 }
 
 .pokedex-card img {
